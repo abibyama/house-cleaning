@@ -11,6 +11,8 @@ const bookingSchema = new mongoose.Schema({
   },
   serviceType: {
     type: String,
+    enum: ['Fönstertvätt', 'Basic Städning', 'Topp Städning', 'Topp Städning'],
+    default: 'Fönstertvätt',
     required: true,
   },
 });
